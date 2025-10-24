@@ -301,7 +301,7 @@ if st.session_state.page == "home":
         with st.container(border=True):
             st.header("🎯 Deteksi Objek")
             st.caption("Temukan Lokasi Spesifik")
-            st.write("Sistem akan mendeteksi dan menandai **api** atau **asap** di dalam gambar, memberikan *bounding box* hasil deteksi.")
+            st.write("Sistem akan mendeteksi dan menandai bidak catur yang ada  di dalam gambar, memberikan *bounding box* hasil deteksi.")
             st.button("➡️ Mulai Deteksi Objek", key="home_open_detect_unique", on_click=go_to, args=("detect",), use_container_width=True)
 
     st.markdown("<div style='height:50px;'></div>", unsafe_allow_html=True)
