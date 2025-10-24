@@ -284,7 +284,7 @@ render_background_layer(st.session_state.page)
 # Halaman HOME
 # ==========================
 if st.session_state.page == "home":
-    st.markdown("<h1 style='text-align:center; color:#FFFFFF; text-shadow: 2px 2px 4px #000000;'>🔥 Aplikasi Analisis Kebakaran Hutan</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align:center; color:#FFFFFF; text-shadow: 2px 2px 4px #000000;'> Analisis Gambar</h1>", unsafe_allow_html=True)
     st.markdown("<p style='text-align:center; font-size: 18px; color: white; text-shadow: 1px 1px 3px #000000;'>Pilih salah satu layanan analitik di bawah untuk memulai pemrosesan gambar Anda.</p>", unsafe_allow_html=True)
     st.markdown("---")
 
