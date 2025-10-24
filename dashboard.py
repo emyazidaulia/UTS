@@ -10,7 +10,7 @@ import random
 # Konfigurasi Global
 # ==========================
 CLASS_NAMES = ['Kebakaran Hutan', 'Bukan Kebakaran Hutan']
-# PNG_URL_DETECT = "https://raw.githubusercontent.com/emyazidaulia/testing/main/sample_images/00000058.png" # 🚨 DIHAPUS
+# PNG_URL_DETECT 
 IMG_URLS_HOME = [
     "https://i.imgur.com/iTMrNAj.jpeg",
     "https://i.imgur.com/FsTtNpE.jpeg",
@@ -18,17 +18,17 @@ IMG_URLS_HOME = [
     "https://i.imgur.com/VwBdFtX.jpeg"
 ]
 TOTAL_DURATION = 20
-# IMAGE_COUNT_DETECT = 5 # Diganti dengan EMOJI_COUNT_DETECT
+# IMAGE_COUNT_DETECT = 5 
 EMOJI_COUNT_CLASSIFY = 40 
 EMOJIS_CLASSIFY = ["🔥", "🌲"] 
 
 # 🚨 BARU: Konfigurasi untuk Deteksi Objek
 EMOJI_COUNT_DETECT = 30 # Jumlah emoji catur yang akan bergerak
-EMOJIS_CHESS = ["♜", "♞", "♝", "♛", "♚", "♟"] # Emoji bidak catur
+EMOJIS_CHESS = ["♜", "♞", "♝", "♛", "♚", "♟"] 
 
 
 # =======================================================
-# 1. FUNGSI STYLE CSS GLOBAL (Diperbarui untuk Animasi Emoji Catur)
+# 1. FUNGSI STYLE CSS GLOBAL
 # =======================================================
 def set_global_styles():
     css_global = f"""
@@ -221,7 +221,7 @@ def render_background_layer(page):
 
 
 # ==========================
-# Load Models (basecode)
+# Load Models 
 # ==========================
 @st.cache_resource
 def load_models():
@@ -390,7 +390,7 @@ elif st.session_state.page == "detect":
                     unique_labels = list(dict.fromkeys(detected_labels))
                     label_text = ", ".join(unique_labels)
                     total = len(detected_labels)
-                    st.markdown(f"### 🧩 Objek Terdeteksi: **{label_text}**")
+                    st.markdown(f"### 🧩 Terdeteksi bidak catur : **{label_text}**")
                     st.write(f"Jumlah total kotak objek terdeteksi: **{total}**")
                 else:
                     st.warning("Tidak ada objek yang terdeteksi.")
